@@ -9,6 +9,16 @@
 	"canvases": [
                     ["moco2019", "MOCO 2019", "Welcome"],
                     ["proceedings", "Proceedings", "Proceedings"],
+                    ["submission", "Submission", "Submission Instructions"],
+                    ["programme", "Programme", "Programme"],
+                    ["keynotes", "Keynotes", "Keynotes"],
+                    ["performances", "Performances", "Performances"],
+                    ["registration", "Registration", "Registration"],
+                    ["venue", "Venue", "Venue"],
+                    ["accomadation", "accomadation", "Accomadation"],
+                    ["committee", "Committee", "Committee"],
+                    ["mocoComm", "Movement and Computing Community", "The Community"],
+                    ["about", "About", "About"],
                     ["contact", "Contact Us", "Contact Us"]
                   ],
 	"haslogin": false

@@ -6,8 +6,20 @@ body{
   font-family: "Open Sans", sans-serif;
 }
 
+.mouseSupport a:hover,
+.touchSupport a:active{
+  background-color: @accentColor;
+}
+
+a, a:visited{
+  font-weight: bold;
+  color: @brandColor;
+  text-shadow: @accentColor 0px 0px 1px;
+}
+
+a,header,
 .accentFont{
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", serif;
 }
 
 .onlySmallScreen, .onlyBigScreen{
