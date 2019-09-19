@@ -120,6 +120,13 @@
           transform: scale(1.2, 1.2) translate3d(0, 0, 0);
 }
 
+.menu-open:checked + .menu-open-button i{
+  transform:scale(.3);
+  display: block;
+  overflow: visible;
+  width: 100px;
+  height: 100px;
+}
 .menu-open:checked + .menu-open-button {
   transition-timing-function: linear;
   transition-duration: 200ms;
