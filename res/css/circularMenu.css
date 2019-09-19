@@ -208,12 +208,12 @@ body{
 nav.menu{
    left: 0;
    top: -50px;
-   transition: .3s;
 }
 
 body.menuVisible nav.menu{
     top: calc(50vh - 100px);
     left: 100px;
+   transition: .3s;
 }
 
 body.menuVisible .menu-open-button .hamburger{
