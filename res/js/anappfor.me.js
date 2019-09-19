@@ -543,3 +543,15 @@ function sortByKey(array, key) {
         return ((x < y) ? -1 : ((x > y) ? 1 : 0));
     });
 }
+
+
+function menuToggled()
+{
+  var flag = document.getElementById("menu-open").checked;
+  if(flag){
+    $("body").addClass("menuVisible");
+  }
+  else{
+    $("body").removeClass("menuVisible");
+  }
+}

@@ -57,11 +57,15 @@ a,header,
     left:305px;
   }
   .onlyBigScreen{
-    display: block;
+    display: none;
   }
   .canvas{
-    width: ~"calc(100vw - 300px)";
-    margin-left: 300px;
+    .content{
+      max-width: 1000px;
+      margin:auto;
+    }
+    width: 100%;
+    margin:auto;
     min-height: 100vh;
     position: absolute;
   }
@@ -69,6 +73,7 @@ a,header,
      visibility: hidden;
   }
 }
+
 
 .sidenav-trigger{
   i{
@@ -491,4 +496,20 @@ a,header,
   color: @menutextColor;
   margin-top: -5px;
   transition: .2s;
+}
+
+
+
+body{
+  background-image:url(../images/bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100vw;
+  height: 100vh;
+}
+
+nav{
+  background: none;
+  box-shadow: none;
 }
