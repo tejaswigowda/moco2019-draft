@@ -179,6 +179,7 @@
   background-image: url(../images/MOCO_Logo_White_Full.png);
   height: 200px;
   width: 300px;
+  max-width: 80vw;
   background-size: contain;
   background-repeat: no-repeat;
   bottom: calc(90% - 200px);
