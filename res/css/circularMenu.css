@@ -5,7 +5,7 @@
 }
 
 .menu-item, .menu-open-button {
-  background: #e4ae38;
+  background: white;
   border-radius: 100%;
   width: 100px;
   height: 100px;
@@ -16,9 +16,9 @@
   text-align: center;
   line-height: 80px;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  transition: -webkit-transform ease-out 200ms;
-  transition: transform ease-out 200ms;
+            transform: translate3d(0, 0, 0);
+    transition: -webkit-transform ease-out 200ms;
+    transition: transform ease-out 200ms;
   transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
 }
 
@@ -29,7 +29,7 @@
 .hamburger {
   width: 25px;
   height: 3px;
-  background: white;
+  background: #e4ae38;
   display: block;
   position: absolute;
   top: 50%;
@@ -121,21 +121,21 @@
 }
 
 .menu-open:checked + .menu-open-button i{
-  transform:scale(.3);
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  transform:scale(.4) translate(10px,10px);
   display: block;
   overflow: visible;
   width: 100px;
   height: 100px;
 }
 .menu-open:checked + .menu-open-button {
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
   transition-timing-function: linear;
   transition-duration: 200ms;
           transform: scale(3) translate3d(0, 0, 0);
+          border:none;
           background:white;
-}
-.menu-open:checked + .menu-open-button .hamburger{
-          background: gray;
-          right:18px;
 }
 
 .menu-open:checked ~ .menu-item {
@@ -173,11 +173,22 @@
           transform: translate3d(-0.25084px, -104.9997px, 0);
 }
 
+#brand{
+  background-image: url(../images/MOCO_Logo_White_Full.png);
+  height: 200px;
+  width: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 20px;
+  position: fixed;
+  right: 10px;
+}
+
 #mapsB{
   background-image: url(../images/maps.png)
 }
 #contactB{
-  background-image: url(../images/maps.png)
+  background-image: url(../images/contact.png)
 }
 #programB{
   background-image: url(../images/program.png)
@@ -198,25 +209,21 @@
 }
 
 .menu-open-button .hamburger{
-  bottom: 30px;
-  right: 10px;
+  bottom: 35px;
+  right: 20px;
   left: auto;
   top: auto;
-
+  background: gray;
 }
 
   
-body.menuVisible{
-   transition: .1s;
-   background-color:#e4ae38;
-}
-
-body{
-   transition: 1s;
-}
 nav.menu{
    left: 0;
    top: -50px;
 }
 
+body.menuVisible
+{
+  background-position:50%;
+}
 
