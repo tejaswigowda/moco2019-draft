@@ -11,6 +11,7 @@
  var hash = window.location.hash.replace("#","").split(",");
  var main = function(){
   activityIndicator.hide();
+  getInputMethod();
   $("html").removeClass("canvas");
   document.getElementById("menu-open").checked = true;
   menuToggled();
