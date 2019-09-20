@@ -231,5 +231,6 @@ body.menuVisible #brand{
 body.menuVisible
 {
   background-position:50%;
+  overflow:hidden;
 }
 
