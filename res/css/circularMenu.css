@@ -123,6 +123,7 @@
 .menu-open:checked + .menu-open-button i{
   transition-timing-function: linear;
   transition-duration: 200ms;
+  transition-property:all;
   transform:scale(.4) translate(10px,10px);
   display: block;
   overflow: visible;
