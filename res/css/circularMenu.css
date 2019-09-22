@@ -1,8 +1,4 @@
 
-.menu {
-  -webkit-filter: url("#goo");
-          filter: url("#goo");
-}
 
 .menu-item, .menu-open-button {
   background: white;
