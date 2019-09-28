@@ -352,9 +352,13 @@ a,header,
 }
 
 .canvas{
-  overflow-x: hidden;
-      transform-style: preserve-3d;
-    perspective: 500px;
+ overflow-x: hidden;
+ transform-style: preserve-3d;
+ perspective: 500px;
+ min-height: 100vh;
+ height: auto;
+ width: 100vw;
+ background: white;
  .wrapper{
    transition:linear .5s;
   width: 94%;
@@ -507,7 +511,6 @@ body{
   background-attachment:fixed;
   background-position: 10px;
   margin: 0px;
-  overflow:hidden;
 }
 
 *{
@@ -515,12 +518,13 @@ body{
     outline:none;
 }
 
-html, body{
+html{
   height: 100vh;
   width: 100vw;
-  max-height: 100vh;
   max-width: 100vw;
-  position:fixed;
+}
+html{
+  position:absolute;
 }
 nav{
   background: none;
@@ -532,6 +536,6 @@ body.canvasVisible #canvasWrapper{
 }
 
 #canvasWrapper{
-  transform: translate(200vw, 200vh);
   transition: .5s;
+  display: none;
 }

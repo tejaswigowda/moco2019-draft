@@ -563,9 +563,10 @@ headerOpen = false;
 function menuSelected(m)
 {
   currMenu = m || currMenu;
-  document.getElementById("canvasWrapper").style.transform = "none";
+  $("#canvasWrapper").fadeIn();
   $(".canvas").fadeOut(0);
   $("#theHeader").stop().fadeIn(100);
   $(".canvas#" + currMenu).stop().fadeIn(100);
   $(".menu").fadeOut(100);
+  $("body").removeClass("menuVisible");
 }
