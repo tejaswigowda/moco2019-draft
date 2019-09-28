@@ -146,7 +146,7 @@
 }
 .menu-open:checked ~ .menu-item:nth-child(4) {
   transition-duration: 280ms all ease-out;
-  margin-left: 200px; 
+  margin-left: 190px; 
   margin-top: 135px;
 }
 .menu-open:checked ~ .menu-item:nth-child(5) {
@@ -182,7 +182,7 @@
   max-width: 80vw;
   background-size: contain;
   background-repeat: no-repeat;
-  bottom: calc(90% - 200px);
+  bottom: calc(90% - 300px);
   position: fixed;
   background-position: bottom right;
   right: 30px;
@@ -241,4 +241,47 @@ body.menuVisible
 .touchSupport .menu-item:active{
   background-color: transparent;
   transform: scale(1.2);
+}
+
+#theHeader.open {
+  top: 0px;
+}
+
+#theHeader {
+  background: white;
+  position: fixed;
+  width: 100%;
+  border-bottom-left-radius: 50%;
+  overflow: hidden;
+  border-bottom-right-radius: 50%;
+  padding-left: 25%;
+  padding-right: 25%;
+  left: -25%;
+  top: -165px;
+  box-shadow: 0px 0px 2px;
+  transition: .4s;
+}
+
+#theHeader #theLogo{
+  border: none;
+  box-shadow: none;
+  display: block;
+  background-image: url(../images/MOCOSmall.png);
+  height: 100px;
+  background-size: contain;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  margin-top: 35px;
+}
+
+#theHeader .menuOption{
+  background: none;
+  border: none;
+  box-shadow: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
 }

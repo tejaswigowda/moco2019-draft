@@ -556,9 +556,16 @@ function menuToggled()
   }
 }
 
+var currMenu = "program"
+headerOpen = false;
+
 
 function menuSelected(m)
 {
+  currMenu = m || currMenu;
   document.getElementById("canvasWrapper").style.transform = "none";
+  $(".canvas").fadeOut(0);
+  $("#theHeader").stop().fadeIn(100);
+  $(".canvas#" + currMenu).stop().fadeIn(100);
   $(".menu").fadeOut(100);
 }

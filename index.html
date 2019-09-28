@@ -30,11 +30,11 @@
       <div id="maps" class="canvas">
         <iframe src='https://map.m.asu.edu/?id=120#!ce/6268?sbc/' style='height:100vh;width:100%;'></iframe>
       </div>
-      <div id="contact" class="canvas" style="">
+      <div id="speakers" class="canvas" style="">
       </div>
       <div id="program" class="canvas" style="">
       </div>
-      <div id="speakers" class="canvas" style="">
+      <div id="contact" class="canvas" style="">
       </div>
       </div>
     </div>
@@ -57,6 +57,15 @@
   <a href="javascript:menuSelected('speakers')" class="menu-item" id='speakerB'></a>
   
 </nav>
+
+<div style='display:none' id='theHeader'>
+  <button class='menuOption' onclick='menuSelected("maps")'>Map</button>
+  <button class='menuOption' onclick='menuSelected("speakers")'>Speakers</button>
+  <button class='menuOption' onclick='menuSelected("program")'>Program</button>
+  <button class='menuOption' onclick='menuSelected("contact")'>Contact</button>
+  <button id='theLogo' onclick='$("#theHeader").toggleClass("open")'></button>
+</div>
+
 
     <a class="btn-floating btn-large waves-effect waves-light left-button" href="javascript:App.goBack()" style='visibility:hidden' id="backButton"><i class="material-icons">arrow_back</i></a>
 
