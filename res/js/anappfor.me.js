@@ -555,3 +555,10 @@ function menuToggled()
     $("body").removeClass("menuVisible");
   }
 }
+
+
+function menuSelected(m)
+{
+  document.getElementById("canvasWrapper").style.transform = "none";
+  $(".menu").fadeOut(100);
+}

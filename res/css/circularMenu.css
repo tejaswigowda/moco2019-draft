@@ -140,20 +140,24 @@
   transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
 }
 .menu-open:checked ~ .menu-item:nth-child(3) {
-  transition-duration: 180ms;
-          transform: translate3d(220px, 30px, 0);
+  transition: 180ms all ease-out;
+  margin-left:215px;
+  margin-top: 30px;
 }
 .menu-open:checked ~ .menu-item:nth-child(4) {
-  transition-duration: 280ms;
-          transform: translate3d(205px, 135px, 0);
+  transition-duration: 280ms all ease-out;
+  margin-left: 200px; 
+  margin-top: 135px;
 }
 .menu-open:checked ~ .menu-item:nth-child(5) {
-  transition-duration: 380ms;
-          transform: translate3d(135px, 205px, 0);
+  transition-duration: 380ms all ease-out;
+  margin-left:110px;
+  margin-top: 205px;
 }
 .menu-open:checked ~ .menu-item:nth-child(6) {
-  transition-duration: 480ms;
-          transform: translate3d(35px, 230px, 0px);
+  transition-duration: all ease-out 480ms;
+  margin-left :5px;
+  margin-top: 230px;
 }
 .menu-open:checked ~ .menu-item:nth-child(7) {
   transition-duration: 580ms;
@@ -173,13 +177,14 @@
 
 #brand{
   background-image: url(../images/MOCO_Logo_White_Full.png);
-  height: 200px;
-  width: 300px;
+  height: 400px;
+  width: 600px;
   max-width: 80vw;
   background-size: contain;
   background-repeat: no-repeat;
   bottom: calc(90% - 200px);
   position: fixed;
+  background-position: bottom right;
   right: 30px;
   transition: .5s;
 }
@@ -232,3 +237,8 @@ body.menuVisible
   overflow:hidden;
 }
 
+.mouseSupport .menu-item:hover,
+.touchSupport .menu-item:active{
+  background-color: transparent;
+  transform: scale(1.2);
+}
