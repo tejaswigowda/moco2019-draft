@@ -566,8 +566,8 @@ function menuSelected(m)
   $("#theHeader").removeClass("open");
   $("#canvasWrapper").fadeIn();
   $(".canvas").fadeOut(0);
-  $("#theHeader").stop().fadeIn(100);
-  $(".canvas#" + currMenu).stop().fadeIn(100);
+  $("#theHeader").stop().fadeIn(500);
+  $(".canvas#" + currMenu).stop().fadeIn(500);
   $(".menu").fadeOut(100);
   $("body").removeClass("menuVisible");
 }

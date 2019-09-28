@@ -13,6 +13,7 @@
   activityIndicator.hide();
   getInputMethod();
   $("html").removeClass("canvas");
+  $(".menu").fadeIn(100);
   document.getElementById("menu-open").checked = true;
   menuToggled();
  }
@@ -40,7 +41,7 @@
     </div>
 
   <!-- app menu -->
-<nav class="menu">
+<nav style='display:none' class="menu">
   <input onchange='menuToggled()' type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
   <label class="menu-open-button" for="menu-open">
     <h1> </h1>
