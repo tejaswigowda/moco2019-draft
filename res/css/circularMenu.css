@@ -1,4 +1,10 @@
 
+@font-face {
+  font-family: 'Avenir';
+  src: url("Avenir.ttc"); 
+}
+
+
 
 .menu-item, .menu-open-button {
   background: white;
@@ -227,6 +233,10 @@ nav.menu{
    top: -50px;
 }
 
+body{
+  font-family: "Avenir", sans-serif;
+}
+
 body.menuVisible #brand{
   bottom: 20px;
 }
@@ -263,7 +273,8 @@ body.menuVisible
   padding-top: 20px;
 }
 
-#theHeader #theLogo{
+#theHeader #theLogo,
+#theLogo:focus{
   border: none;
   box-shadow: none;
   display: block;
@@ -278,6 +289,7 @@ body.menuVisible
 }
 
 #theHeader .menuOption{
+  font-family: "Avenir", sans-serif;
   background: none;
   border: none;
   box-shadow: none;
