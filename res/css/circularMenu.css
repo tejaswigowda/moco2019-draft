@@ -304,8 +304,13 @@ body.menuVisible
   display: block;
   text-align: center;
   width: 200px;
-  margin:auto
+  margin:auto;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 15px;
+}
+
+.pageTitle
+{
+  text-align:center;
 }
