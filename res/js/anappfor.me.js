@@ -562,6 +562,7 @@ headerOpen = false;
 
 function menuSelected(m)
 {
+  $(".menuOption").removeClass("selected")
   currMenu = m || currMenu;
   $("#theHeader").removeClass("open");
   $("#canvasWrapper").fadeIn();
@@ -570,4 +571,5 @@ function menuSelected(m)
   $(".canvas#" + currMenu).stop().fadeIn(500);
   $(".menu").fadeOut(100);
   $("body").removeClass("menuVisible");
+  $(".menuOption."+ currMenu).addClass("selected")
 }

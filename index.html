@@ -16,6 +16,9 @@
   $(".menu").fadeIn(100);
   document.getElementById("menu-open").checked = true;
   menuToggled();
+  loadFile("./res/pages/contact.html", function(data){$("#contact").html(data)});
+  loadFile("./res/pages/speakers.html", function(data){$("#speakers").html(data)});
+  loadFile("./res/pages/program.html", function(data){$("#program").html(data)});
  }
 
 
@@ -59,10 +62,10 @@
 </nav>
 
 <div style='display:none' id='theHeader'>
-  <button class='menuOption' onclick='menuSelected("maps")'>Map</button>
-  <button class='menuOption' onclick='menuSelected("speakers")'>Speakers</button>
-  <button class='menuOption' onclick='menuSelected("program")'>Program</button>
-  <button class='menuOption' onclick='menuSelected("contact")'>Contact</button>
+  <button class='menuOption maps' onclick='menuSelected("maps")'>Map</button>
+  <button class='menuOption speakers' onclick='menuSelected("speakers")'>Speakers</button>
+  <button class='menuOption program' onclick='menuSelected("program")'>Program</button>
+  <button class='menuOption contact' onclick='menuSelected("contact")'>Contact</button>
   <button id='theLogo' onclick='$("#theHeader").toggleClass("open")'></button>
 </div>
 
