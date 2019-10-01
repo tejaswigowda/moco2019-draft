@@ -12,7 +12,6 @@ a, a:visited{
   text-shadow: @accentColor 0px 0px 1px;
 }
 
-a,header,
 .accentFont{
   font-family: "Roboto", serif;
 }
@@ -359,6 +358,10 @@ a,header,
  height: auto;
  width: 100vw;
  background: white;
+ background-position: 0px 50%;
+ background-size:contain;
+ background-repeat:no-repeat;
+ background-attachment:fixed;
  .wrapper{
    transition:linear .5s;
   width: 94%;
@@ -498,7 +501,7 @@ a,header,
 }
 
 body{
-  color: black;
+  color: #656565;
   background: white;
   transition: .2s;
   background-image:url(../images/bg.png);
@@ -538,5 +541,5 @@ body.canvasVisible #canvasWrapper{
 }
 
 .top100{
-  height: 100px;
+  height: 110px;
 }
