@@ -14,7 +14,7 @@
   getInputMethod();
   $("html").removeClass("canvas");
   $(".menu").fadeIn(100);
-  document.getElementById("menu-open").checked = true;
+  document.getElementById("menu-open").checked = false;
   menuToggled();
   loadFile("./res/pages/contact.html", function(data){$("#contact").html(data)});
   loadFile("./res/pages/speakers.html", function(data){$("#speakers").html(data)});

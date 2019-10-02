@@ -4,6 +4,16 @@
   src: url("Avenir.ttc"); 
 }
 
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("AvenirNext.ttc"); 
+}
+
+@font-face {
+  font-family: 'Avenir Condensed';
+  src: url("AvenirNextCondensed.ttc"); 
+}
+
 
 
 .menu-item, .menu-open-button {
@@ -292,8 +302,8 @@ body.menuVisible
 
 #theHeader .menuOption.selected{
   text-transform: uppercase;
-  color: #e4ae38;
-  text-shadow: 0px 0px 2px;
+ /* color: #e4ae38;
+  text-shadow: 0px 0px 2px;*/
 }
 
 #theHeader .menuOption{
@@ -398,6 +408,7 @@ max-width: 700px;
 }
 .card h4{
   font-size: 16px;
+  font-family: "Avenir Medium", sans-serif;
 }
 .card h1{
   font-size: 24px;
@@ -409,4 +420,44 @@ max-width: 700px;
   font-weight: normal;
   margin-bottom:0px;
   margin-top:5px;
+}
+
+#speakers .card:active
+{
+  background: #DBDAA6;
+}
+
+#program .card:active
+{
+  background: #BDC9DE;
+}
+
+#contact .card{
+  box-shadow: 0px 15px 20px rgba(0,0,0,.16);
+}
+
+#speakers button.card{
+  width: 100%;
+  border: none;
+  box-shadow: 0px 15px 20px #DBDAA6;
+  text-align:center;
+  font-size: 24px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #656565;
+  background: rgba(255,255,255,.9);
+  font-family: Avenir;
+}
+
+#program button.card{
+  width: 100%;
+  border: none;
+  box-shadow: 0px 15px 20px #BDC9DE;
+  text-align:center;
+  font-size: 24px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #656565;
+  background: rgba(255,255,255,.9);
+  font-family: Avenir;
 }
