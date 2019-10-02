@@ -557,8 +557,20 @@ function menuToggled()
 }
 
 var currMenu = "program"
-headerOpen = false;
 
+
+function goHome(xm)
+{
+  if(document.getElementById("theHeader").className === "open"){
+    $(".menuOption").removeClass("selected")
+    $("#theHeader").removeClass("open");
+    $("#canvasWrapper").fadeOut();
+    $(".canvas").fadeOut(0);
+    $("#theHeader").stop().fadeOut(500);
+    $(".menu").fadeIn(100);
+    $("body").addClass("menuVisible");
+  }
+}
 
 function menuSelected(m)
 {
@@ -580,7 +592,7 @@ function menuSelected(m)
     document.getElementById("theHeader").style.boxShadow = "0px 15px 20px #DBDAA6";
   }
   else if(currMenu === "maps"){
-    document.getElementById("theHeader").style.boxShadow = "0px 15px 10px #8ECD9A";
+    document.getElementById("theHeader").style.boxShadow = "0px 5px 10px #8ECD9A";
   }
   else if(currMenu === "contact"){
     document.getElementById("theHeader").style.boxShadow = "0px 15px 20px rgba(0,0,0,.16)";
