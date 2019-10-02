@@ -343,10 +343,8 @@ body.menuVisible
 }
 
 #accordion input:checked + label {
-	background: #ccc;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
-	color: white;
 	margin-bottom: 0;
 }
 #accordion article {
@@ -506,7 +504,10 @@ span.clock{
 }
 
 
-article, .article{
+article, .article,
+.pcard h3,
+.pcard h4
+{
   margin-left: auto;
   margin-right: 0px;
   width: calc(100% - 70px);
@@ -524,6 +525,8 @@ article, .article{
 .pcard{
   background: white;
   margin: 10px 0px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .tcenter{
