@@ -49,7 +49,7 @@ function loadFile(filename, callback)
 }
 
 function swipeDetectorInit(){
-var myElement = document.getElementById("theHeader");
+var myElement = document.getElementById("theLogo");
 myElement.addEventListener("touchstart", startTouch, false);
 myElement.addEventListener("touchmove", moveTouch, false);
 }
@@ -64,7 +64,7 @@ function startTouch(e) {
 };
  
 function moveTouch(e) {
-  e.preventDefault();
+ // e.preventDefault();
   if (initialX === null) {
     return;
   }
@@ -79,6 +79,7 @@ function moveTouch(e) {
   var diffX = initialX - currentX;
   var diffY = initialY - currentY;
  
+
   if (Math.abs(diffX) > Math.abs(diffY)) {
     // sliding horizontally
     if (diffX > 0) {
@@ -88,13 +89,16 @@ function moveTouch(e) {
     }  
   } else {
     // sliding vertically
-    if (diffY > 0) {
+    if (diffY > 6) {
       // swiped up
-      $("#theHeader").removeClass("open")
-    } else {
+      $("#theHeader").removeClass("open");
+    } else if (diffY < -6){
       // swiped down
       $("#theHeader").addClass("open")
     }  
+    else{
+      goHome();
+    }
   }
  
   initialX = null;

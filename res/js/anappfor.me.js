@@ -597,4 +597,5 @@ function menuSelected(m)
   else if(currMenu === "contact"){
     document.getElementById("theHeader").style.boxShadow = "0px 15px 20px rgba(0,0,0,.16)";
   }
+   $("HTML, BODY").animate({ scrollTop: 0}, 100);
 }
