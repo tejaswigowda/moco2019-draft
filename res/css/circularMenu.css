@@ -511,6 +511,8 @@ article, .article,
   margin-left: auto;
   margin-right: 0px;
   width: calc(100% - 70px);
+  margin-top: -5px;
+  margin-bottom: 15px;
 }
 
 .hr{
