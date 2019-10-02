@@ -47,3 +47,57 @@ function loadFile(filename, callback)
         alert("A problem occurred instantiating the XMLHttpRequest object.");
     }
 }
+
+function swipeDetectorInit(){
+var myElement = document.getElementById("theHeader");
+myElement.addEventListener("touchstart", startTouch, false);
+myElement.addEventListener("touchmove", moveTouch, false);
+}
+ 
+// Swipe Up / Down / Left / Right
+var initialX = null;
+var initialY = null;
+ 
+function startTouch(e) {
+  initialX = e.touches[0].clientX;
+  initialY = e.touches[0].clientY;
+};
+ 
+function moveTouch(e) {
+  if (initialX === null) {
+    return;
+  }
+ 
+  if (initialY === null) {
+    return;
+  }
+ 
+  var currentX = e.touches[0].clientX;
+  var currentY = e.touches[0].clientY;
+ 
+  var diffX = initialX - currentX;
+  var diffY = initialY - currentY;
+ 
+  if (Math.abs(diffX) > Math.abs(diffY)) {
+    // sliding horizontally
+    if (diffX > 0) {
+      // swiped left
+    } else {
+      // swiped right
+    }  
+  } else {
+    // sliding vertically
+    if (diffY > 0) {
+      // swiped up
+      $("#theHeader").removeClass("open")
+    } else {
+      // swiped down
+      $("#theHeader").addClass("open")
+    }  
+  }
+ 
+  initialX = null;
+  initialY = null;
+   
+  e.preventDefault();
+};
