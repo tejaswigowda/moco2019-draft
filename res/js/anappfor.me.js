@@ -629,7 +629,7 @@ function goBack()
 function goto(n){
   switch(n){
     case "sfb":
-      document.getElementById("mapFrame").src = "https://map.m.asu.edu/?id=120#!m/63016?s/stauffer%20b?ct/0,10596";
+      document.getElementById("mapFrame").src = "https://map.m.asu.edu/?id=120#!m/63016?sbc/";
       menuSelected("maps");
       break;
     default:
