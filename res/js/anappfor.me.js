@@ -599,3 +599,11 @@ function menuSelected(m)
   }
    $("HTML, BODY").animate({ scrollTop: 0}, 100);
 }
+
+function dayClicked(n)
+{
+  ++n;
+  $('html, body').animate({
+      scrollTop: $("#d" + n + "wp").offset().top -125
+    }, 1000)
+}

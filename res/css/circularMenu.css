@@ -482,37 +482,40 @@ span.blueDot{
 
 
 span.greenDot{
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     background-image: url(../images/greenDot.png);
     display: inline-block;
-    background-size: contain;
+    background-size: 30px;
     background-position: 50%;
     vertical-align: middle;
     margin: 0 10px 0 0;
+    border-radius: 50%;
 }
 
 
 span.yellowDot{
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     background-image: url(../images/yellowDot.png);
     display: inline-block;
-    background-size: contain;
+    background-size: 30px;
     background-position: 50%;
     vertical-align: middle;
     margin: 0 10px 0 0;
+    border-radius: 50%;
 }
 
 span.clock{
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     background-image: url(../images/clock.png);
     display: inline-block;
-    background-size: contain;
+    background-size: 30px;
     background-position: 50%;
     vertical-align: middle;
     margin: 0 10px 0 0;
+    border-radius: 50%;
 }
 
 span.pin{
