@@ -84,8 +84,10 @@ function moveTouch(e) {
     // sliding horizontally
     if (diffX > 0) {
       // swiped left
+     $("#theHeader").addClass("open") 
     } else {
       // swiped right
+     $("#theHeader").addClass("open") 
     }  
   } else {
     // sliding vertically

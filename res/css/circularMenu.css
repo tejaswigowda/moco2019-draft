@@ -389,8 +389,8 @@ body.menuVisible
 
 .canvas .content{
   margin:auto;
-width: 90%;
-max-width: 700px;
+  width: 90%;
+  max-width: 700px;
 }
 
 .card
