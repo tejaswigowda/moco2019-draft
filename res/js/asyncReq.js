@@ -99,7 +99,12 @@ function moveTouch(e) {
       $("#theHeader").addClass("open")
     }  
     else{
-      goHome();
+      if(document.getElementById("theHeader").className === "open"){
+        goHome();
+      }
+      else{
+        $("#theHeader").addClass("open")
+      }
     }
   }
  
