@@ -632,6 +632,10 @@ function goto(n){
       document.getElementById("mapFrame").src = "https://map.m.asu.edu/?id=120#!m/63016?sbc/";
       menuSelected("maps");
       break;
+    case "is":
+      document.getElementById("mapFrame").src = "https://map.m.asu.edu/?id=120#!m/63214?sbc/";
+      menuSelected("maps");
+      break;
     default:
       break;
   }
