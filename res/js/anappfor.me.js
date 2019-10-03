@@ -636,3 +636,8 @@ function goto(n){
       break;
   }
 }
+
+function gotoA(n){
+   menuSelected("speakers");
+   speakerClicked(n);
+}
