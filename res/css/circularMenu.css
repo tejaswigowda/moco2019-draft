@@ -192,15 +192,13 @@
 
 #brand{
   background-image: url(../images/MOCO_Logo_White_Full.png);
-  height: 400px;
-  width: 600px;
-  max-width: 80vw;
+  height: 200px;
+  width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  bottom: calc(90% - 300px);
+  bottom: calc(90% - 250px);
   position: fixed;
-  background-position: bottom right;
-  right: 30px;
+  background-position: 50%;
   transition: .5s;
 }
 
@@ -247,7 +245,7 @@ body{
 }
 
 body.menuVisible #brand{
-  bottom: 20px;
+  bottom: 120px;
 }
 
 body.menuVisible
@@ -522,7 +520,8 @@ span.pin{
     background-image: url(../images/pin.png);
     display: inline-block;
     background-size: contain;
-    background-position: 50%;
+    background-position: -3px 50%;
+    background-repeat: no-repeat;
     vertical-align: middle;
     margin: 0px;
 }
@@ -534,7 +533,7 @@ article, .article,
 {
   margin-left: auto;
   margin-right: 0px;
-  width: calc(100% - 65px);
+  width: calc(100% - 70px);
   margin-top: -5px;
   margin-bottom: 15px;
 }
