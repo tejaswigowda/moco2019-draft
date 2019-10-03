@@ -442,7 +442,7 @@ body.menuVisible
 #speakers button.card{
   width: 100%;
   border: none;
-  box-shadow: 0px 15px 20px #DBDAA6;
+  box-shadow: 0px 10px 20px #DBDAA6;
   text-align:center;
   font-size: 24px;
   padding-top: 40px;
@@ -455,7 +455,7 @@ body.menuVisible
 #program button.card{
   width: 100%;
   border: none;
-  box-shadow: 0px 15px 20px #BDC9DE;
+  box-shadow: 0px 10px 20px #BDC9DE;
   text-align:center;
   font-size: 24px;
   padding-top: 30px;

@@ -586,17 +586,17 @@ function menuSelected(m)
   $(".menuOption."+ currMenu).addClass("selected")
 
   if(currMenu === "program"){
-    document.getElementById("theHeader").style.boxShadow = "0px 15px 20px #BDC9DE";
+    document.getElementById("theHeader").style.boxShadow = "0px 10px 20px #BDC9DE";
   }
   else if(currMenu === "speakers"){
-    document.getElementById("theHeader").style.boxShadow = "0px 15px 20px #DBDAA6";
+    document.getElementById("theHeader").style.boxShadow = "0px 10px 20px #DBDAA6";
     goBack();
   }
   else if(currMenu === "maps"){
     document.getElementById("theHeader").style.boxShadow = "0px 5px 10px #8ECD9A";
   }
   else if(currMenu === "contact"){
-    document.getElementById("theHeader").style.boxShadow = "0px 15px 20px rgba(0,0,0,.16)";
+    document.getElementById("theHeader").style.boxShadow = "0px 10px 20px rgba(0,0,0,.16)";
   }
    $("HTML, BODY").animate({ scrollTop: 0}, 100);
 }
