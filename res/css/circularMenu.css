@@ -148,7 +148,7 @@
   position: fixed;
   height: 80px;
   width: 86px;
-  border-radius: 100px;
+  border-radius: 35px;
 }
 
 .menu-open:checked ~ .menu-item {

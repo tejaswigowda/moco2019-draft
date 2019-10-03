@@ -625,3 +625,14 @@ function goBack()
   $("#speakerPage .page").fadeOut(0);
    $("HTML, BODY").animate({ scrollTop: 0}, 100);
 }
+
+function goto(n){
+  switch(n){
+    case "sfb":
+      document.getElementById("mapFrame").src = "https://map.m.asu.edu/?id=120#!m/63016?s/stauffer%20b?ct/0,10596";
+      menuSelected("maps");
+      break;
+    default:
+      break;
+  }
+}
