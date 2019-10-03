@@ -618,3 +618,8 @@ article, .article,
 {
     margin: 25px 0px;
 }
+
+.page .tcenter{
+  text-transform: uppercase;
+  text-align:left;
+}
