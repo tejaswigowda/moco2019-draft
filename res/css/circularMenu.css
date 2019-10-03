@@ -471,7 +471,7 @@ span.blueDot{
     width: 25px;
     background-image: url(../images/blueDot.png);
     display: inline-block;
-    background-size: contain;
+    background-size: 30px;
     background-position: 50%;
     vertical-align: middle;
     margin: 0 10px 0 0;
