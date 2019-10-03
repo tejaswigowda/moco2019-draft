@@ -559,14 +559,14 @@ function menuToggled()
 var currMenu = "program"
 
 
-function goHome(xm)
+function goHome()
 {
   if(document.getElementById("theHeader").className === "open"){
     $(".menuOption").removeClass("selected")
     $("#theHeader").removeClass("open");
     $("#canvasWrapper").fadeOut();
     $(".canvas").fadeOut(0);
-    $("#theHeader").stop().fadeOut(500);
+    $("#theHeader").stop().fadeOut(0);
     $(".menu").fadeIn(100);
     $("body").addClass("menuVisible");
   }
