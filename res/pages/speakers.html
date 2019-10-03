@@ -2,27 +2,28 @@
 <h1 class='pageTitle'> Speakers </h1>
 
 <div class='content'>
-  
-  <button onclick='speakerClicked(0)' class='card'>
-    Kristina Höök
-  </button>
-  <button onclick='speakerClicked(1)' class='card'>
-   Maaike Bleeker
-  </button>
-  <button onclick='speakerClicked(2)' class='card'>
-    Sylvian Moreno
-  </button>
+  <div id='speakerList'>
+    <button onclick='speakerClicked(0)' class='card'>
+      Kristina Höök
+    </button>
+    <button onclick='speakerClicked(1)' class='card'>
+     Maaike Bleeker
+    </button>
+    <button onclick='speakerClicked(2)' class='card'>
+      Sylvian Moreno
+    </button>
+  </div>
 
   <div id='speakerPage' style='display:none'>
     <button id='backButton' onclick='goBack()'></button>
     <div class='page' id='page0'>
-      <h1>Kristina Höök</h1>
+      <h2>Kristina Höök</h2>
     </div>
     <div class='page' id='page1'> 
-         Maaike Bleeker
+         <h2>Maaike Bleeker</h2>
     </div>
     <div class='page' id='page2'> 
-        Sylvian Moreno
+        <h2>Sylvian Moreno</h2>
     </div>
   </div>
   

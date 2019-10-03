@@ -565,3 +565,23 @@ article, .article,
 .tcenter{
   text-align:center;
 }
+
+#backButton
+{
+  position: fixed;
+  bottom: 50%;
+  height: 80px;
+  width: 100px;
+  background: #fff;
+  left: -50px;
+  border: none;
+  outline: none;
+  background-image: url(../images/back.png);
+  background-position: 55px 50%;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  box-shadow:rgb(219, 218, 166) 0px 15px 20px;
+  border-radius: 50%;
+}
+
+

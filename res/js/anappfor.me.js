@@ -590,6 +590,7 @@ function menuSelected(m)
   }
   else if(currMenu === "speakers"){
     document.getElementById("theHeader").style.boxShadow = "0px 15px 20px #DBDAA6";
+    goBack();
   }
   else if(currMenu === "maps"){
     document.getElementById("theHeader").style.boxShadow = "0px 5px 10px #8ECD9A";
@@ -606,4 +607,19 @@ function dayClicked(n)
   $('html, body').animate({
       scrollTop: $("#d" + n + "wp").offset().top -125
     }, 1000)
+}
+
+function speakerClicked(n)
+{
+  $("#speakerList").fadeOut();
+  $("#speakerPage").fadeIn();
+  $("#speakerPage .page").fadeOut(0);
+  $("#speakerPage #page"+n).fadeIn();
+}
+
+function goBack()
+{
+  $("#speakerList").fadeIn();
+  $("#speakerPage").fadeOut();
+  $("#speakerPage .page").fadeOut(0);
 }
