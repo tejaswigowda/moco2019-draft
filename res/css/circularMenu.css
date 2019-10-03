@@ -622,4 +622,15 @@ article, .article,
 .page .tcenter{
   text-transform: uppercase;
   text-align:left;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+#speakerPage{
+  position: absolute;
+    top: 140px;
+    left: 20px;
+    width: calc(100% - 40px);
+}
+
 }
