@@ -615,6 +615,7 @@ function speakerClicked(n)
   $("#speakerPage").fadeIn();
   $("#speakerPage .page").fadeOut(0);
   $("#speakerPage #page"+n).fadeIn();
+   $("HTML, BODY").animate({ scrollTop: 0}, 100);
 }
 
 function goBack()
@@ -622,4 +623,5 @@ function goBack()
   $("#speakerList").fadeIn();
   $("#speakerPage").fadeOut();
   $("#speakerPage .page").fadeOut(0);
+   $("HTML, BODY").animate({ scrollTop: 0}, 100);
 }
