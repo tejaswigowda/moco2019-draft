@@ -518,7 +518,7 @@ span.clock{
 
 span.pin{
     height: 25px;
-    width: 25px;
+    width: 20px;
     background-image: url(../images/pin.png);
     display: inline-block;
     background-size: contain;
