@@ -455,8 +455,8 @@ body.menuVisible
 #program button.card{
   width: 100%;
   border: none;
-  box-shadow: 0px 5px 20px #BDC9DE;
   text-align:center;
+  box-shadow: 0px 5px 20px #BDC9DE;
   font-size: 24px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -468,14 +468,14 @@ body.menuVisible
 
 
 span.blueDot{
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     background-image: url(../images/blueDot.png);
     display: inline-block;
     background-size: 30px;
     background-position: 50%;
     vertical-align: middle;
-    margin: 0 10px 0 0;
+    margin: 0 5px 0 0;
 }
 
 
@@ -487,7 +487,7 @@ span.greenDot{
     background-size: 30px;
     background-position: 50%;
     vertical-align: middle;
-    margin: 0 10px 0 0;
+    margin: 0 5px 0 0;
     border-radius: 50%;
 }
 
@@ -500,7 +500,7 @@ span.yellowDot{
     background-size: 30px;
     background-position: 50%;
     vertical-align: middle;
-    margin: 0 10px 0 0;
+    margin: 0 5px 0 0;
     border-radius: 50%;
 }
 
