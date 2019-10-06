@@ -570,6 +570,9 @@ function goHome()
     $(".menu").fadeIn(100);
     $("body").addClass("menuVisible");
   }
+  else{
+    $("#theHeader").addClass("open");
+  }
 }
 
 function menuSelected(m)

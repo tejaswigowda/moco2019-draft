@@ -472,10 +472,11 @@ span.blueDot{
     width: 20px;
     background-image: url(../images/blueDot.png);
     display: inline-block;
-    background-size: 30px;
+    background-size: 40px;
     background-position: 50%;
     vertical-align: middle;
     margin: 0 5px 0 0;
+    border-radius: 50%;
 }
 
 
@@ -484,7 +485,7 @@ span.greenDot{
     width: 20px;
     background-image: url(../images/greenDot.png);
     display: inline-block;
-    background-size: 30px;
+    background-size: 40px;
     background-position: 50%;
     vertical-align: middle;
     margin: 0 5px 0 0;
@@ -497,7 +498,7 @@ span.yellowDot{
     width: 20px;
     background-image: url(../images/yellowDot.png);
     display: inline-block;
-    background-size: 30px;
+    background-size: 40px;
     background-position: 50%;
     vertical-align: middle;
     margin: 0 5px 0 0;
@@ -539,6 +540,11 @@ span.bio{
     background-repeat: no-repeat;
     vertical-align: bottom;
     margin: 0px;
+}
+
+
+.pcard h3{
+  font-weight:normal;
 }
 
 
@@ -590,8 +596,8 @@ article, .article,
   border: none;
   outline: none;
   background-image: url(../images/back.png);
-  background-position: 55px 50%;
-  background-size: 40px;
+  background-position: 60px 50%;
+  background-size: 25px;
   background-repeat: no-repeat;
   box-shadow:rgb(219, 218, 166) 0px 15px 20px;
   border-radius: 50%;
@@ -648,4 +654,24 @@ article, .article,
     width: calc(100% - 40px);
 }
 
+.fwnormal{
+  font-weight:normal;
+}
+
+.legend span{
+  margin-left: 20px;
+  margin-right: 2px;
+}
+
+
+.social-media a{
+  display: inline-block;
+}
+
+.mouseSupport .social-media a:hover,
+.touchSupport .social-media a:active{
+  background:transparent;
+  text-shadow:none;
+  transform:scale(1.4);
+  transition: .2s;
 }
