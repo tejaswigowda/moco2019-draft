@@ -575,6 +575,29 @@ function goHome()
   }
 }
 
+function initWaypoints()
+{
+  var waypoint1 = new Waypoint({
+    element: document.getElementById('d1wp'),
+    handler: function(direction) {
+      handleWP(1, direction);
+    }
+  });
+  var waypoint2 = new Waypoint({
+    element: document.getElementById('d2wp'),
+    handler: function(direction) {
+      handleWP(2, direction);
+    }
+  });
+  var waypoint3 = new Waypoint({
+    element: document.getElementById('d3wp'),
+    handler: function(direction) {
+      handleWP(3, direction);
+    }
+  });
+}
+
+var wpInit = false; 
 function menuSelected(m)
 {
   $(".menuOption").removeClass("selected")
@@ -590,6 +613,10 @@ function menuSelected(m)
 
   if(currMenu === "program"){
     document.getElementById("theHeader").style.boxShadow = "0px 10px 20px #BDC9DE";
+    if(!wpInit){
+      wpInit = true;
+      initWaypoints();
+    }
   }
   else if(currMenu === "speakers"){
     document.getElementById("theHeader").style.boxShadow = "0px 10px 20px #DBDAA6";
@@ -647,4 +674,9 @@ function goto(n){
 function gotoA(n){
    menuSelected("speakers");
    speakerClicked(n);
+}
+
+
+function handleWP(day, dir){
+  console.log(day, dir);
 }
