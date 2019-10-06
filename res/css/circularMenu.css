@@ -517,6 +517,19 @@ span.clock{
     border-radius: 50%;
 }
 
+
+span.cup{
+    height: 30px;
+    width: 30px;
+    background-image: url(../images/cup.png);
+    display: inline-block;
+    background-size: 30px;
+    background-position: 50%;
+    vertical-align: middle;
+    margin: 0 4px 0 0;
+    border-radius: 50%;
+}
+
 span.pin{
     height: 25px;
     width: 20px;
