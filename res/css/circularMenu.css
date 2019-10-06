@@ -675,3 +675,29 @@ article, .article,
   transform:scale(1.4);
   transition: .2s;
 }
+
+
+.open .headerText
+{
+  opacity: 0;
+}
+
+.headerText
+{
+    bottom: 10px;
+    position: absolute;
+    width: 50vw;
+    height: 20px;
+    transition: .2s;
+}
+
+#headerTextL{
+   transform: rotate(22deg);
+}
+
+#headerTextR{
+   transform: rotate(-22deg);
+    right: 10px;
+    bottom: auto;
+    margin-top: 47px;
+}

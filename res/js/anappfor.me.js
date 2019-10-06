@@ -610,6 +610,7 @@ function menuSelected(m)
   $(".menu").fadeOut(100);
   $("body").removeClass("menuVisible");
   $(".menuOption."+ currMenu).addClass("selected")
+  $(".headerText").html("");
 
   if(currMenu === "program"){
     document.getElementById("theHeader").style.boxShadow = "0px 10px 20px #BDC9DE";
@@ -678,5 +679,34 @@ function gotoA(n){
 
 
 function handleWP(day, dir){
-  console.log(day, dir);
+  if(day == 1){
+    if(dir == "up"){
+      $("#headerTextL").html("");
+      $("#headerTextR").html("");
+    }
+    else{
+      $("#headerTextL").html("Day 1");
+      $("#headerTextR").html("Thu, October 10th");
+    }
+  }
+  else if(day == 2){
+    if(dir == "up"){
+      $("#headerTextL").html("Day 1");
+      $("#headerTextR").html("Thu, October 10th");
+    }
+    else{
+      $("#headerTextL").html("Day 2");
+      $("#headerTextR").html("Fri, October 11th");
+    }
+  }
+  else if(day == 3){
+    if(dir == "up"){
+      $("#headerTextL").html("Day 2");
+      $("#headerTextR").html("Fri, October 11th");
+    }
+    else{
+      $("#headerTextL").html("Day 3");
+      $("#headerTextR").html("Sat, October 12th");
+    }
+  }
 }
