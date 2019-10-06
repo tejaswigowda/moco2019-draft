@@ -703,3 +703,7 @@ article, .article,
     bottom: auto;
     margin-top: 50px;
 }
+
+.article a{
+  text-decoration: none;
+}

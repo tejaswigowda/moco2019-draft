@@ -24,6 +24,9 @@
  }
 
  function loadProgram(){
+  loadFile("./res/pages/program.html",function(data){$("#program").html(data)});return;
+  
+
   loadFile("https://tejaswigowda.github.io/moco2019-draft/res/pages/program.html",function(res){
     if(res.length && res.length > 500){
       localStorage.setItem("res", res);
