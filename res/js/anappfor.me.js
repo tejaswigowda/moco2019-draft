@@ -677,6 +677,8 @@ function goto(n){
     default:
       break;
   }
+  $("#headerTextL").html("");
+  $("#headerTextR").html("");
 }
 
 function gotoA(n){
@@ -693,27 +695,27 @@ function handleWP(day, dir){
     }
     else{
       $("#headerTextL").html("Day 1");
-      $("#headerTextR").html("Thu, October 10th");
+      $("#headerTextR").html("Thu, October 10<sup>th</sup>");
     }
   }
   else if(day == 2){
     if(dir == "up"){
       $("#headerTextL").html("Day 1");
-      $("#headerTextR").html("Thu, October 10th");
+      $("#headerTextR").html("Thu, October 10<sup>th</sup>");
     }
     else{
       $("#headerTextL").html("Day 2");
-      $("#headerTextR").html("Fri, October 11th");
+      $("#headerTextR").html("Fri, October 11<sup>th</sup>");
     }
   }
   else if(day == 3){
     if(dir == "up"){
       $("#headerTextL").html("Day 2");
-      $("#headerTextR").html("Fri, October 11th");
+      $("#headerTextR").html("Fri, October 11<sup>th</sup>");
     }
     else{
       $("#headerTextL").html("Day 3");
-      $("#headerTextR").html("Sat, October 12th");
+      $("#headerTextR").html("Sat, October 12<sup>th</sup>");
     }
   }
 }
