@@ -28,9 +28,9 @@
   line-height: 80px;
   -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-    transition: -webkit-transform ease-out 200ms;
-    transition: transform ease-out 200ms;
-  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+    transition: -webkit-transform ease-out 500ms;
+    transition: transform ease-out 500ms;
+  transition: transform ease-out 500ms, -webkit-transform ease-out 200ms;
 }
 
 .menu-open {
@@ -672,7 +672,7 @@ article, .article,
 }
 
 .legend span{
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: 2px;
 }
 
@@ -719,4 +719,10 @@ article, .article,
 
 .article a{
   text-decoration: none;
+}
+
+
+.menu-open-button h1
+{
+  border-radius: 50%;
 }
