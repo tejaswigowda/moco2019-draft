@@ -705,16 +705,20 @@ article, .article,
 }
 
 #headerTextL{
-   transform: rotate(20deg);
-   text-transform: uppercase;
-   font-size: 120%;
+      transform: rotate(3.4deg);
+    text-transform: uppercase;
+    position: fixed;
+    margin-left: -45px;
+    top: 80px;
+    text-align: right;
+    font-weight: bold;
 }
 
 #headerTextR{
-  transform: rotate(-14deg);
-  right: 30px;
-  bottom: auto;
-  margin-top: 58px;
+  transform: rotate(-1deg);
+    right: 40px;
+    top: 82px;
+    position: fixed;
 }
 
 .article a{
