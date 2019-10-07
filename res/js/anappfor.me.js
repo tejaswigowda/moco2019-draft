@@ -579,21 +579,21 @@ function initWaypoints()
 {
   var waypoint1 = new Waypoint({
     element: document.getElementById('d1wp'),
-    offset: 130,
+    offset: 135,
     handler: function(direction) {
       handleWP(1, direction);
     }
   });
   var waypoint2 = new Waypoint({
     element: document.getElementById('d2wp'),
-    offset: 130,
+    offset: 135,
     handler: function(direction) {
       handleWP(2, direction);
     }
   });
   var waypoint3 = new Waypoint({
     element: document.getElementById('d3wp'),
-    offset: 130,
+    offset: 135,
     handler: function(direction) {
       handleWP(3, direction);
     }
