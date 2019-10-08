@@ -556,7 +556,7 @@ function menuToggled()
   }
 }
 
-var currMenu = "program"
+var currMenu = "maps"
 
 
 function goHome()
@@ -688,6 +688,11 @@ function gotoA(n){
 
 
 function handleWP(day, dir){
+  if(currMenu != "program"){
+      $("#headerTextL").html("");
+      $("#headerTextR").html("");
+      return;
+  }
   if(day == 1){
     if(dir == "up"){
       $("#headerTextL").html("");
