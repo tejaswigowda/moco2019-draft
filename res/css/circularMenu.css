@@ -290,7 +290,7 @@ body.menuVisible
   height: 100px;
   background-size: 90px;
   width: 100%;
-  background-position: center;
+  background-position: center 12px;
   background-repeat: no-repeat;
   padding-bottom: 20px;
   margin-top: 15px;
