@@ -603,13 +603,13 @@ function initWaypoints()
 var wpInit = false; 
 function menuSelected(m)
 {
+  $("#theHeader").removeClass("open");
   $(".menuOption").removeClass("selected")
   currMenu = m || currMenu;
-  $("#theHeader").removeClass("open");
   $("#canvasWrapper").fadeIn();
   $(".canvas").fadeOut(0);
-  $("#theHeader").stop().fadeIn(500);
-  $(".canvas#" + currMenu).stop().fadeIn(500);
+  $("#theHeader").stop().fadeIn(50);
+  $(".canvas#" + currMenu).stop().fadeIn(50);
   $(".menu").fadeOut(100);
   $("body").removeClass("menuVisible");
   $(".menuOption."+ currMenu).addClass("selected")
