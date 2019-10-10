@@ -628,7 +628,12 @@ function menuSelected(m)
   }
   else if(currMenu === "maps"){
     document.getElementById("theHeader").style.boxShadow = "0px 5px 10px #8ECD9A";
-    document.getElementById("mapFrame").src = "https://www.google.com/maps/d/embed?mid=1SRTEXVScNFFqHSu5KNON8Lq3mBshgp-n";
+    if(dLoad){
+      dLoad = false;
+    }
+    else{
+      document.getElementById("mapFrame").src = "https://www.google.com/maps/d/embed?mid=1SRTEXVScNFFqHSu5KNON8Lq3mBshgp-n";
+    }
   }
   else if(currMenu === "contact"){
     document.getElementById("theHeader").style.boxShadow = "0px 10px 20px rgba(0,0,0,.16)";
@@ -661,7 +666,9 @@ function goBack()
    $("HTML, BODY").animate({ scrollTop: 0}, 100);
 }
 
+var dLoad = false;
 function goto(n){
+  dLoad = true;
   switch(n){
     case "sfb":
       menuSelected("maps");
