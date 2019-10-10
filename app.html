@@ -3,8 +3,20 @@
 <head>
   <base href="./">
   <meta content="width=device-width, initial-scale=1, maximum-width=device-width, maximum-scale=1" name="viewport">
+  <script>
+fu$nction main(){
+ if(window.navigator.userAgent.toLocaleLowerCase().indexOf("iphone") >=0 || window.navigator.userAgent.toLocaleLowerCase().indexOf("ipad") >=0){
+   window.location.href = "https://apps.apple.com/us/app/moco-2019/id1482444792";
+ } 
+ if(window.navigator.userAgent.toLocaleLowerCase().indexOf("android") >=0){
+   window.location.href = "https://play.google.com/store/apps/details?id=com.fns.MOCO2019";
+ }
+}
+  </script>
 </head>
-<body onload='main()' style='margin:0'>
+<body onload='main()' style='margin:0;background-image:url(res/images/bg.png);text-align:center'>
+
+<img src='res/images/icon.png' height=100>
 </body>
 
 </html>
