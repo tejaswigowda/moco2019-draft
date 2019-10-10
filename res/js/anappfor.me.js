@@ -664,8 +664,8 @@ function goBack()
 function goto(n){
   switch(n){
     case "sfb":
-      document.getElementById("mapFrame").src = "https://map.m.asu.edu/?id=120#!m/63016?sbc/";
       menuSelected("maps");
+      document.getElementById("mapFrame").src = "https://map.m.asu.edu/?id=120#!m/63016?sbc/";
       break;
     case "is":
       document.getElementById("mapFrame").src = "https://map.m.asu.edu/?id=120#!m/63214?sbc/";
